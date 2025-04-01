@@ -363,7 +363,9 @@ def main():
         app.add_handler(CommandHandler("add_admin", add_admin))
         app.add_error_handler(error_handler)
 
+        print("До add_ai_handlers")
         add_ai_handlers(app)
+        print("После add_ai_handlers")
 
         print("Бот запущен...")
         return app
